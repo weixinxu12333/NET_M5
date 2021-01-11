@@ -19,5 +19,14 @@ namespace NET_M6_EMPLEATS
             SouBase = souBase;
             MultiplicadorSou = multiplicadorSou;
         }
+
+        public override string ToString()
+        {
+            return $@"
+                Sou Base: {SouBase}
+                Sou Brut Mensual: {SouBrutMensual}
+                Sou Brut Anual: {SouBrutAnual}
+            ";
+        }
     }
 }

@@ -6,6 +6,9 @@ namespace NET_M6_EMPLEATS
 {
     public class Manager : Base
     {
-        public Manager(double souBase) : base(souBase, 1.1) { }
+        public Manager(double souBase) : base(souBase, 1.1)
+        {
+            if (souBase < 3000 || souBase > 5000) throw new ArgumentOutOfRangeException(nameof(souBase));
+        }
     }
 }

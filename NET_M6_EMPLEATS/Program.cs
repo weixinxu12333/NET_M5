@@ -10,14 +10,24 @@ namespace NET_M6_EMPLEATS
 
             Console.WriteLine($"Sou base: {souBase}");
 
-            Base empleat = new Boss(souBase);
-            Console.WriteLine("Sou de Boss: "  + empleat.SouBrutMensual);
-            empleat = new Employee(souBase);
-            Console.WriteLine("Sou de Employee: " + empleat.SouBrutMensual);
-            empleat = new Manager(souBase);
-            Console.WriteLine("Sou de Manager: " + empleat.SouBrutMensual);
+            Base empleat = new Boss(souBase*8);
+            Console.WriteLine("Boss:");
+            Console.WriteLine(empleat);
+            empleat = new Manager(souBase * 4);
+            Console.WriteLine("Manager:");
+            Console.WriteLine(empleat);
+            empleat = new Senior(souBase * 3);
+            Console.WriteLine("Senior:");
+            Console.WriteLine(empleat);
+            empleat = new Mid(souBase * 2);
+            Console.WriteLine("Mid:");
+            Console.WriteLine(empleat);
+            empleat = new Junior(souBase);
+            Console.WriteLine("Junior:");
+            Console.WriteLine(empleat);
             empleat = new Volunteer();
-            Console.WriteLine("Sou de Volunteer: " + empleat.SouBrutMensual);
+            Console.WriteLine("Volunteer:");
+            Console.WriteLine(empleat);
 
 
 

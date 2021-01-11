@@ -6,6 +6,8 @@ namespace NET_M6_EMPLEATS
 {
     public class Volunteer : Base
     {
-        public Volunteer() : base(0, 0) { }
+        public Volunteer() : base(0, 0) {
+            // El constructor de Volunteer no accepta sou base, pel que mai cobra.
+        }
     }
 }
